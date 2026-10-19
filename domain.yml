@@ -1,0 +1,537 @@
+version: '3.1'
+intents:
+- affirm
+- ask_feeling_anxious
+- ask_goodbye
+- ask_whatcanyoudo
+- ask_who_are_you
+- ask_whomadeyou
+- bot_challenge
+- deny
+- goodbye
+- greet
+- handleinsult
+- mood_great
+- mood_unhappy
+- not_well
+- smalltalk_agent_answer_my_question
+- smalltalk_agent_bad
+- smalltalk_agent_clever
+- smalltalk_agent_good
+- smalltalk_appraisal_bad
+- smalltalk_appraisal_good
+- smalltalk_appraisal_thank_you
+- smalltalk_appraisal_well_done
+- smalltalk_greetings_goodevening
+- smalltalk_greetings_goodmorning
+- smalltalk_greetings_goodnight
+- smalltalk_user_needs_advice
+- tell_details
+- user_anger_therapy
+- user_anxiety_therapy
+- user_ask_if_depression_or_anxiety
+- user_bipolar_disorder
+- user_change_feeling_worthless
+- user_cried_therapy
+- user_dementia_therapy
+- user_depression_therapy
+- user_emptiness_therapy
+- user_hopeless_therapy
+- user_loneliness_therapy
+- user_personality_therapy
+- user_ptsd_therapy
+- user_seasonal_anxiety
+- user_seasonal_therapy
+- user_suicidal_therapy
+- user_symptom_actingimpulsively
+- user_symptom_anger
+- user_symptom_avoidance
+- user_symptom_difficultyconcentrating
+- user_symptom_dizziness
+- user_symptom_erraticbehavior
+- user_symptom_fatigue
+- user_symptom_flashbacks
+- user_symptom_hygiene
+- user_symptom_increasedheartrate
+- user_symptom_intrusivethoughts
+- user_symptom_lackofsleep
+- user_symptom_lostofinterest
+- user_symptom_moodswings
+- user_symptom_movementissues
+- user_symptom_muscleache
+- user_symptom_nausea
+- user_symptom_nightmares
+- user_symptom_paranoia
+- user_symptom_relationshipproblems
+- user_symptom_repeatingquestions
+- user_symptom_stomachissues
+- user_symptom_suicidalthoughts
+- user_symptom_uneasiness
+- user_therapy_worthless
+- user_tired_therapy
+- user_upset_therapy
+- user_say_no_or_yes
+- ask_lostsomeone
+- stop_asking_questions
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  - text: Hello, Would you like to tell me what is going on in your world right now?
+  - text: Hi! How are you feeling today?
+  - text: Hi there! How can i help you?
+  utter_affirm:
+  - text: Yes
+  - text: Sure
+  - text: What is it?
+  utter_goodbye:
+  - text: Okay Bye!
+  - text: Goodbye
+  - text: See you later
+  - text: Take care!
+  - text: Bye! Rooting for you!
+  utter_mood_unhappy:
+  - text: Why do you feel sad?
+  - text: Why are you not happy?
+  - text: Is there a specific reason that you feel this way?
+  - text: Why are you feeling this way?
+  utter_handleinsult:
+  - text: I am sorry if I said anythig wrong
+  - text: As i am not human, I am sorry if i couldn't relate to your problems as much
+  - text: I'm sorry if I was not of any help
+  - text: Sorry from my side
+  utter_clever:
+  - text: ThankYou! I was designed to do this
+  - text: I'm glad that I was of help
+  - text: ThankYou!
+  - text: I am glad that I was helpful
+  - text: I am glad to hear that
+  - text: ThankYou! It means alot
+  utter_ask_insomnia:
+  - text: Do you sleep peacefully at night?
+  - text: Are you sleeping quite comfortably?
+  utter_ask_fatigue:
+  - text: Do you feel you are tired all the time?
+  - text: Do you feel like you have no energy?
+  utter_ask_anger:
+  - text: Do you feel angry all the time?
+  - text: Do you feel irritated all the time?
+  - text: Do you feel annoyed all the time?
+  utter_ask_stomachissues:
+  - text: Does your stomach hurts?
+  - text: Do you feel pain in your stomach?
+  utter_ask_suicidalthoughts:
+  - text: Do you feel like ending your own life?
+  - text: Do you experience suicidal thoughts?
+  utter_ask_lostofinterest:
+  - text: Do you feel like you have lost interest in everything?
+  - text: Do you feel pleasure in doing things?
+  utter_ask_uneasiness:
+  - text: Do you feel uncomfortable most of the time?
+  - text: Are you able to rest properly?
+  utter_ask_nausea:
+  - text: Do you feel sick most of the time?
+  - text: Do you feel relaxed or not?
+  utter_ask_dizziness:
+  - text: Do you feel dizzy?
+  - text: Do you feel lightheaded?
+  utter_ask_increasedheartrate:
+  - text: Do you have increased heart rate?
+  - text: Do you feel like your heart is beating fast?
+  utter_ask_muscleache:
+  - text: Does your body hurts?
+  - text: Does your muscles hurts?
+  - text: Do you have tighten muscles?
+  utter_ask_moodswings:
+  - text: Does your mood changes quickly?
+  - text: Do your emotions vary quick?
+  - text: Do you experience severe mood swings?
+  utter_ask_paranoia:
+  - text: Do you feel paranoid most of the time?
+  - text: Do you feel like people have betrayed you or will betray you?
+  utter_ask_hygiene:
+  - text: Do you take care of your hygiene?
+  - text: Do you feel like you need to look presentable?
+  - text: Do you give proper time to your hygiene?
+  utter_ask_erraticbehavior:
+  - text: Does your behavior changes?
+  - text: Is your behavior regular?
+  utter_ask_relationshipproblems:
+  - text: Do you have any relationship issues?
+  - text: Do you have issues regarding your personal life?
+  utter_ask_flashbacks:
+  - text: Do you see flashbacks from your memory?
+  - text: Do you have trouble forgetting your past?
+  utter_ask_nightmares:
+  - text: Do you have nightmares?
+  - text: Do you feel like your dreams haunt you?
+  utter_ask_intrusivethoughts:
+  - text: Do random thoughts pop in your head?
+  - text: Do you have control over your thoughts?
+  - text: Do you overthink about everything for no reason?
+  utter_ask_avoidance:
+  - text: Do you avoid things?
+  - text: Do you avoid people or things around you?
+  utter_ask_difficultyconcentrating:
+  - text: Do you often make mistakes?
+  - text: Can you concentrate properly?
+  utter_ask_actingimpulsively:
+  - text: Do you think thoroughly before doing anything?
+  - text: Do you act impulsively?
+  utter_ask_movementissues:
+  - text: Does your body feels stuck?
+  - text: Do you face body movement issues?
+  utter_ask_repeatingquestions:
+  - text: Do you repeatedly ask the same questions?
+  - text: Do you repeat the same questions?
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_helpful:
+  - text: I am glad that i was of some help to you.
+  - text: Glad to know that i was helpful.
+  - text: Glad that I left a significant impact on you.
+  utter_happy:
+  - text: Great, carry on!
+  utter_iamabot:
+  - text: I am Psych-Bot. I am your personal psychiatry assistant.
+  - text: I am Psych-Bot, your personal therapeutic AI assistant.
+  utter_whomadeyou:
+  - text: I was made by Mouz Ramzan and Momina Imran.
+  utter_meet:
+  - text: Hello! Nice to meet you. How are you doing?
+  utter_whatcanyoudo:
+  - text: I can provide basic information regarding mental health and Psychological disorders.
+  - text: I can hep you in the time of your need.
+  - text: I can be there for you when you don't feel like yourself.
+  - text: I can be there for you when you need someone to talk to.
+  utter_complete:
+  - text: I have generated your prescription, you can see it on the next page. Would you like to tell me the reason of your symptoms, I can be of help.
+  utter_suicidal_therapy:
+  - text: It's okay to feel overwhelmed and hopeless, but please know that these feelings are temporary. Let's work together to create a safety plan and find ways to manage your suicidal thoughts.
+  - text: It takes a lot of strength to talk about suicidal thoughts, and I'm proud of you for being brave enough to share them with me. Together, we can work towards finding solutions and improving your mental health.
+  utter_hopeless_therapy:
+  - text: It's important to challenge negative thoughts that may be contributing to your feelings of hopelessness. Let's work together to reframe your thoughts and create a more positive outlook.
+  - text: Remember that progress is not always linear. Some days may be harder than others, but every step towards finding hope and meaning in your life is a step in the right direction.
+  utter_anxiety_therapy:
+  - text: When you're feeling anxious, try to focus on the present moment. Use deep breathing exercises or mindfulness techniques to ground yourself and reduce your anxiety.
+  - text: It's important to challenge negative thoughts that may be contributing to your anxiety. Let's work together to reframe your thoughts and create a more positive outlook.
+  - text: Another thing about anxiety is that having anxiety can lead to more worry about having more anxiety
+  - text: Since anxiety usually about anticipating a bad result , or fear of being judged negatively , as though having failed some sort of test , consider what would give you the feeling of anticipating a good result from talking to an audience
+  utter_depression_therapy:
+  - text: Depression can look different for everybody . it sounds to me like what your family is trying to tell you that they are worried about you , and think this behavior might be a result of depression . if what you are experiencing seems fine and normal to you , it may be nothing to worry about . it is very common to have thoughts of doubt about yourself and your abilities , and it may help to open up about those thoughts to people you trust . developing relationships with friends and families can be a very rewarding experience , but it can take a brave person to reach out !
+  - text: Depression can make it difficult to see the positive aspects of your life. Let's work together to identify your strengths and find ways to build on them, so you can feel more confident and empowered.
+  - text: Let's explore the root causes of your depression so we can better understand it and work towards addressing it together.
+  - text: Depression can make you feel overwhelmed and paralyzed to change
+  - text: Depression can make you feel overwhelmed and paralyzed to change . i would suggest that you connect with a provider who can help you get to the root of where the worthlessness is coming from and help you develop a plan for recovery . in the meantime , small steps can go a long way . self - care interventions such as journaling your feelings , mindfulness meditation , and regular exercise are all helpful to reconnecting with the present moment and gaining internal motivation . focusing on one day at a time and bringing your thoughts back to the present can also be beneficial . there is hope !
+  - text: It must be really difficult to experience what your going through right now . it takes a lot of courage to reach out . it sounds like you want to get better , but perhaps need some help to get over the hump . many of the symptoms you have described are consistent with a person who is dealing with depression . depression is a treatable condition . typically , if these symptoms have persisted for more than two weeks , then it is a good idea to seek professional help .
+  - text: Feelings of depression have a deeply - rooted base in physical structures that may not be functioning very well at present ; and , we can certainly turn them on again using means that you are able to find around the house and with relative ease after that , emotional and spiritual support will be liberally applied .
+  utter_personality_therapy:
+  - text: Having a personality disorder can make it difficult to see the positive aspects of your life. Let's work together to identify your strengths and find ways to build on them, so you can feel more confident and empowered.
+  - text: I want you to know that having a personality disorder is not a personal failing or weakness. It's a condition that can be managed with the right support and treatment.
+  utter_dementia_therapy:
+  - text: Dementia can be a difficult journey, but it's important to remember that you have the support of your loved ones and healthcare providers. Let's work together to create a strong support network for you.
+  - text: I want you to know that you are not alone in your journey with dementia. Together, we can work towards improving your quality of life and finding ways to manage your symptoms.
+  utter_bipolar_therapy:
+  - text: Bipolar disorder can be a lifelong condition, but with the right support and treatment, you can manage your symptoms and live a fulfilling life. Let's work together to create a strong support network for you.
+  - text: I want you to know that living with bipolar disorder can be challenging, but you are not alone. Together, we can work towards improving your mental health and finding ways to manage your symptoms.
+  utter_worthless_therapy:
+  - text: Sometimes people need a little help to get started in understanding how to recognize your feelings
+  - text: If everyone thinks you ' re worthless , then maybe you need to find new people to hang out with . seriously , the social context in which a person lives is a big influence in self - esteem . otherwise , you can go round and round trying to understand why you ' re not worthless , then go back to the same crowd and be knocked down again . there are many inspirational messages you can find in social media . maybe read some of the ones which state that no person is worthless , and that everyone has a good purpose to their life.
+  - text: I first want to let you know that you are not alone in your feelings and there is always someone there to help . you can always change your feelings and change your way of thinking by being open to trying to change . you can always make yourself available to learning new things or volunteering so that you can make a purpose for yourself.
+  - text: People who feel worthless were , in one way or another , were told that they are worthless . this is the lie that they are living with . the work of therapy is to help people see their true good selves . this gives them self esteem .
+  - text: I'm sorry to hear you're feeling this intense emotion of worthlessness . i ' m glad to hear this has not reached the point of suicidal ideation ; however , it does sounds like you could use some additional support right now . i would recommend seeking out counseling to help you challenge the negative beliefs you have about yourself . although many types of therapy would be helpful , cognitive - behavioral therapy has been shown to be a good approach for this type of struggle.
+  utter_anger_therapy:
+  - text: Anger is not necessarily a bad thing
+  - text: If you think about this time while holding onto the bead , the bead may remind you of a time when you felt happy
+  - text: Change negative thought patterns try and recall or be aware of your thoughts , particularly when you are feeling angry
+  - text: Anger is a normal emotion , no different than joy , elation , or sadness . it ' s not anger that gets us in trouble it ' s the overtness of the emotion or how we allow it to manifest that gets us in trouble . being able to control your temper depends on several variables how you saw anger acted out as a child in terms of your primary caregivers and what you internalized as being normal in terms of managing conflict , and your communication style regarding how you confront problematic situations . there are some whose anger takes on a volcano effect whereby they don ' t readily address problematic situations but rather they continue to stuff their emotion until the right trigger causes them them to explode , and then there are those who are very impulsive in terms of how they react to stressful situations , they don ' t take time to think out situations or to make sense of them , they just impulsively respond .
+  - text: I wonder if you're avoiding your own emotions
+  - text: if you are angry and you can talk about your feelings , that would be very helpful
+  - text: A lot of times the anger someone expresses is from feeling a deep level hurt within themselves
+  - text: If you think about this time while holding onto the bead , the bead may remind you of a time when you felt happy
+  - text: Often feelings of hurt or insecurity can come out as anger if we cannot properly identify and express the feelings
+  - text: Anger often comes with a lot of other emotions . consider what else you may be feeling at the same time and keep track of your different mood changes . you may be able to notice patterns , such as being more frustrated when you don ' t sleep well . if you do feel as though you are mad all the time , can you think of any exceptions so you can see what is different in those times ?
+  - text: Awareness is the first step . now that you know that you snap and push people away , you can look into ways to control your anger . if you give yourself the time to analyze why you experience anger , you will discover that there are other feelings underneath ; shame , frustration , disappointment , and fear are some of the feelings that we cover with anger when we are not ready to deal with them or don ’ t know how to express them . so next time you feel angry , even if you snap ( with practice you will be able to identify them ahead of time ) , identify why you are angry , and try to express it out loud .
+  utter_loneliness_therapy:
+  - text: If you are experiencing loneliness , try to look at what it connects to and find something that changes your focus for a few minutes
+  - text: Loneliness is so painful , and when we feel lonely , this can lead to fears that we are not worthy of love or that the world is just a cold and lonely place
+  - text: It sounds like you are feeling pretty stuck , lonely , and hopeless ; like you have a desire to be more connected to people and to find purpose in life , but are not sure what to do .
+  - text: Loneliness may show the absence of feeling a variety of emotions when you are among others . how many friends you have doesn ' t affect whether you and someone else feel emotionally engaged with one another . consider if you feel like concentrating your friendship on more intensively sharing your feelings with a few of your friends . this may lead to fewer friends who are also more meaningful to you and your feeling a decrease of loneliness .
+  - text: We feel alone because we are not comfortable with being our self . when you find that nobody is around do you feel alone ? your never alone . once you take the journey to really understand who you are and unconditionally loving all that is you , there will never be an alone moment .
+  utter_how_to_change_feeling_worthless_therapy:
+  - text: The feeling of being worthless is caused by your inside being not matching your outside result
+  - text: First step is to believe you are worthy to yourself . recognizing you are in a quest is already a big first step . taking the time to start figuring out who you are is definitely the next . . . do so with self compassion and kindness . know this is a process and just look forward for what you might find . i do recommend you find someone to talk to ( there are many options out there that can fit the situation you are in ) , and i also recommend you start by giving yourself the importance to invest some time and effort in this quest . you deserve it . there are some excellent ted talks you can google , great books you can read , or even joining a yoga practice , team or some kind of hobby may help . anything that shows yourself you are worthy of this effort .
+  - text: Feelings of worthlessness often originate from what you learned about yourself when you were young . improving your self esteem needs focus on that original message from parents , teachers or siblings that may be suppressed . most of us need help to uncover the lie because you were born valuable !
+  - text: Mantras can help with this as well ( i am worth a lot , i am important , i have value )
+  - text: First off , there is nothing wrong with you
+  - text: Do you remember the first time you questioned your worth
+  - text: The feeling of being worthless is caused by your inside being not matching your outside result . your comparison to others and you thinking you need to be someone other than who you are . you are not worthless . no one is worthless . you need to find your worth and not let yourself talk yourself out of the good you find in yourself . i hope these words resonate with you and that you start looking for your worth even if it ’ s as simple as i am able to get out of bed and call someone and make a joke .
+  utter_tell_user_depression_or_anxiety:
+  - text: Depression and anxiety can both be chronic conditions , as you have experienced . this means that they may always require treatment in order to have some kind of relief from them . treatment could mean medication or some kind of counseling . some people may take medication for the rest of their lives . some people may go to counseling at times when the depression and anxiety worsens . as you mentioned , sometimes the symptoms improve for a little while , but they can also come back .
+  - text: The important thing to remember is that mental health disorders are as important as and as treatable physical health disorders
+  - text: Overcoming anxiety and depression is not an easy feat to do on your own , especially if it ' s been something you have been battling for years . there are some different routes you may go down in order to start the healing process therapy - find a therapist who has a lot of experience with anxiety and depression . you can do this by googling anxiety depression therapist  in your city . PsychBot also has a directory of amazing therapists , as does psychology todaymedication - depending on what other symptoms you may be struggling with depends on what medication you will be prescribed . be 100 % honest with the doctor and ask about different side effects or potential risks associated with the medication .
+  - text: Once you felt that you had some control over the anxiety i ' d start to work on some of your other concerns , but i would seek your input on what you felt like might be good to work on next
+  - text: Anxiety and depression are rooted in a person ' s outlook on who they are and how they handle situations and relationships . changing these deep major structures in your life takes time to try new ways and see what develops , then fine tune accordingly . most commonly , anxiety and depression relate to one ' s self definition . reflect on your own opinion of yourself and whether you ' d like making any adjustments to this . then figure out what stops or inhibits you from doing this . try new ways of thinking and interacting with other people . the changed impression you make on others will influence your own view of who you are . in america people take pharma pills to not feel badly .
+  - text: It could be really helpful to see a counselor / therapist about your increasing depression / panic symptoms . finding out the cause of depression / anxiety isn ' t always as straightforward as it seems , since both issues tend to become patterns we engage in rather than solely related to a specific trigger / reason . for example , if i am feeling down about a particular circumstance in my life , then i start seeing life through this lens of feeling down , and typically i ' ll start to see a lot more that i get down about , and it can really build very quickly on itself . same with anxiety . obviously , this is a very simplified example and it can be very difficult to see how the pattern is maintained , but that ' s where working with a counselor / therapist comes in . i would be curious about whether you can start to notice the initial sensations of panic , and if you can ( through the panic attack ) continue to maintain awareness of the actual physical sensations.
+  - text: Anxiety and depression are often linked . i don't consider them as diseases . depression is a symptom of deep hurts to the sense of self that leaves a person feeling shamed . anxiety is a symptom of not being given the proper emotional resources to handle the problems of life . it is also the result of being taught that life is a dangerous place that can't be managed .
+  - text: It is challenging to maintain motivation at all times , anxiety and depression can set in which can make interacting with others a struggle , it can lead us to do things that make us not feel good and we become isolated . this ends up feeding into a cycle that maintains the anxiety / depression loop and can be really challenging to step out of it . you are in a place of awareness and this is the first step in making changes that can help you feel better . it is really one step at a time , a concrete plan , with self - compassion to build the solid ground you need to come out of this .
+  - text: It has been said that depression is often the result of a blocked goal . often people struggle with both anxiety and depression but have difficulty determining which is the most important issue . for some , depression is the result of frequently blocked goals and when their predominant issues are evaluated , they discover that they are anxious ( worried ) about a lot of areas in their life but seem to find no relief . when there is no relief and there have been numerous attempts ( either in their mind or in practical application ) to resolve the anxiety , depression is often the result . in this type of case , depression is not the main or underlying issue . '
+  utter_upset_therapy:
+  - text: One thing that comes to mind is making a list of some things that happen each day . it could be that there are things that are affecting how upset you are , but because so many other things are going on , you may not notice . another idea to try is to keep a list for a month of one good thing that happened each day . this way , when you ' re having a rough day , you have a list to think of and take a look at . are you eating and sleeping in ways that are typical for you ( typically at least two meals per day and roughly 8 hours of sleep that night ( may be different depending on your age ) ? these two ideas are closely related to changes in your mood . from where do you have support ? friends or family ? can you take 5 or 10 minutes per day to do something that you enjoy ? if you think back to the last time that you felt what was contributing to that ? another possibility is to try to be mindful of things that you do every day . for example , rather than eating a turkey sandwich as fast as possible on your lunch break , consider actually tasting it and enjoying it . also consider giving yourself praise for doing something well . for example , when you finish
+  - text: It's important to take a look inside and see what's going on with you to cause you to have these feelings
+  - text: Feelings are real , is very unlikely that you are making them up since they are a response to the thoughts in your mind and your daily experiences and interactions . often we assume that feeling sadness is bad and that we should only feel happiness and joy ; but all feelings have a purpose joy , sadness , anger , frustration , excitement , anxiety , among others . is not healthy to experience the same feeling for a long time , so we should learn to identify what causes them and how to process them so you can navigate through life experiences with more ease . '
+  - text: It is important to look at your feelings , and to feel what you are actually feeling ( instead of what you think you should feel )
+  - text: Trust and believe your own feelings . emotions are real and reflect how someone feels about a situation . since you ' re sad about losing a loved one , be patient w your feelings about this . basically , be guided by how you feel and eventually you will feel different emotions which i hope will be happier ones .
+  utter_seasonal_anxiety_therapy:
+  - text: Seasonal depression can be difficult due to the weather being a primary trigger . understanding that we have very little control over the weather , therefore we can focus on the things we can change . exercising , meditation , guided imagery , and deep breathing can be beneficial to combat seasonal depression . it may help to join a support group and seek out therapy to assist you on this healing journey .
+  - text: Light therapy is helpful, you're not alone in this. Many people feel the same way as you do.
+  - text: You can fight your winter blues by keeping the curtains light in your bedroom. Having the natural light in your room can start off your day from good and will also be helpful for you to get up easily in the morning.
+  - text: Stop listening to sad music as you are already having that feeling of yourself.
+  - text: Exercising, eating healthy and practicing new leisure activities may be good ways to start fighting off your seasonal anxiety.
+  utter_feeling_empty_therapy:
+  - text: Your question is very broad because feeling empty can develop for many different reasons . you ' re certainly not alone in feeling this way ! try to follow the logic of your feelings by asking yourself questions about the empty feeling . doing this may open up a discovery about the reason for the emptiness feeling . when do you feel empty , are there certain situations it happens more often than another , what helps the feeling go away , what or who is helpful in relieving the empty feeling .
+  - text: A feeling of emptiness can be from a lack of awareness and acknowledgment for the things , the people , the places that you have in your life . the use of affirmation and gratitudes helps to remind ourselves of all of the aspects of our lives .
+  - text: Be aware of yourself and allow yourself to explore these thoughts and emotions
+  - text: I'm not sure that you don't feel emotion or that you are frightened of the depth of your emotions .
+  utter_feeling_tired_therapy:
+  - text: Being tired can really affect almost everyone's ability to work through things that make them sad , confused , or angry , among other emotions . if you ' re having difficulty sleeping , try to get into a habit of going to bed and waking up close to the same time every day . also consider only using the bed for sleeping so your brain knows that it ' s time to sleep when you are in bed . if you are not sleeping while you are in bed , consider getting up and reading a book or doing something to make you tired before going back to bed . hopefully you ' ll be able to establish a pattern . sometimes sadness and other emotions make sleeping very difficult as well . try keeping track of your moods to see what is leading up to the changes
+  - text: As silly as it may sound , making sure that we are getting the right amount of restful sleep is very important when we are feeling low
+  utter_feeling_sad_therapy:
+  - text: I wonder if you have moments where you feel happy ? you say you have amazing friends .I wonder if you get along with them and feel as though you can be yourself around them . sometimes we put a lot of pressure on ourselves to do really well at everything all the time and this can be overwhelming sometimes . where do you have support ? i hope you can tell someone that you are feeling sad so that you can talk about your feelings . sleeping can make a big difference as far as feeling sad as well . if you ' re not sleeping well at night , that could be a big part of feeling sad a lot . perhaps you could try to find a person or two who makes you feel totally safe and comfortable and try to talk with them .
+  utter_ptsd_therapy:
+  - text: Post traumatic stress disorder ( ptsd ) is a very complex issue . it is the root cause of many other issues including depression , anxiety and anger to name a few . re - experiencing the event is a telltale symptom of ptsd . one of the best things you can do for yourself is to find someone who specializes in this area to help you work through the symptoms associated with this disorder as well as directly addressing the event / events that initially caused the symptoms . there are various treatment methods available to helping professionals that are successful in treating this disorder . in the meantime there is a book called the body keeps the score , it is informative and may be helpful for you on your journey . it is my hope that you are not dealing with this alone . best wishes !
+  - text: Unfortunately , ptsd is not something that can be cured . ptsd can be managed through therapy . mindfulness can assist in redirecting thoughts and gaining further control over paranoia . therapy is confidential and there are different ways you can obtain treatment . mental health professional have availability to provide therapy online , on the phone or in person .
+  - text: It's very normal to stop feeling emotions as a way to protect yourself after experiencing a traumatic event
+  - text: I would encourage you to seek out a trauma therapist who can work with you slowly and at your pace
+  utter_cry_therapy:
+  - text: If you feel embarrassed because you cried , or if you feel anxious that you might cry , well those feelings are ok as well
+  - text: Crying is something that some express when its hard to discuss situations that may have never been discussed
+  - text: If crying is how you are expressing an emotion , then not only would it be normal , but hopefully encouraged , because it ' s an important part of therapy to have a safe space to express your emotions
+  utter_ask_question:
+  - text: I am so sorry to hear that. Do you mind if I ask a series of questions to know if there is something going on with your mental health?
+  - text: I am concerned for you. Let me ask you some questions. Shall we begin?
+  utter_ask_story:
+    - text: Alright, you can tell me what is in your head and you will feel relaxed?
+    - text: No worries, Kindly tell me why are you feeling this way?
+  utter_will_help:
+    - text: Sure, I am here to help you. Kindly tell me what happened?
+    - text: Yes, please tell me how I can I help you?
+
+  utter_stop:
+    - text: Sure, you can just tell me about what's in your head?
+  utter_empathy:
+    - text: I am sorry for your loss. Can you tell me more about what you are feeling?
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+#entities:
+#- insomnia
+#- fatigue
+#- anger
+#- stomach_issues
+#- suicidal_thoughts
+#- loss_of_interest
+#- uneasiness
+#- nausea
+#- dizziness
+#- heart_palpitations
+#- muscle_ache
+#- mood_swings
+#- paranoia
+#- neglected_hygiene
+#- erratic_behavior
+#- relationship_problems
+#- vivid_flashbacks
+#- nightmares
+#- intrusive_thoughts
+#- avoidance
+#- repeating_questions
+#- difficulty_concentrating
+#- acting_impulsively
+#- movement_issues
+#- risky_behavior
+#- confidence_issues
+#- self_talking
+#- drug_usage
+#- name
+#slots:
+#  insomnia:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: insomnia
+#  fatigue:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: fatigue
+#  anger:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: anger
+#  stomach_issues:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: stomach_issues
+#  suicidal_thoughts:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: suicidal_thoughts
+#  loss_of_interest:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: loss_of_interest
+#  uneasiness:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: uneasiness
+#  nausea:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: nausea
+#  dizziness:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: dizziness
+#  heart_palpitations:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: heart_palpitations
+#  muscle_ache:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: muscle_ache
+#  mood_swings:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: mood_swings
+#  paranoia:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: paranoia
+#  neglected_hygiene:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: neglected_hygiene
+#  erratic_behavior:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: erratic_behavior
+#  relationship_problems:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: relationship_problems
+#  vivid_flashbacks:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: vivid_flashbacks
+#  nightmares:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: nightmares
+#  intrusive_thoughts:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: intrusive_thoughts
+#  avoidance:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: avoidance
+#  repeating_questions:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: repeating_questions
+#  difficulty_concentrating:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: difficulty_concentrating
+#  acting_impulsively:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: acting_impulsively
+#  movement_issues:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: movement_issues
+#  risky_behavior:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: risky_behavior
+#  confidence_issues:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: confidence_issues
+#  self_talking:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: self_talking
+#  drug_usage:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: drug_usage
+#  name:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: name
+#forms:
+#  name_form:
+#    required_slots:
+#    - name
+#  symptom_form:
+#    required_slots:
+#    - insomnia
+#    - fatigue
+#    - anger
+#    - stomach_issues
+#    - suicidal_thoughts
+#    - loss_of_interest
+#    - uneasiness
+#    - nausea
+#    - dizziness
+#    - heart_palpitations
+#    - muscle_ache
+#    - mood_swings
+#    - paranoia
+#    - neglected_hygiene
+#    - erratic_behavior
+#    - relationship_problems
+#    - vivid_flashbacks
+#    - nightmares
+#    - intrusive_thoughts
+#    - avoidance
+#    - repeating_questions
+#    - difficulty_concentrating
+#    - acting_impulsively
+#    - movement_issues
+#    - risky_behavior
+#    - confidence_issues
+#    - self_talking
+#    - drug_usage
+#actions:
+#- utter_greet

@@ -1,0 +1,40 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+
+#- rule: activate symptom form
+#  steps:
+#  - intent: not_well
+#  - action: symptom_form
+#  - active_loop: symptom_form
+#
+#- rule: submit form
+#  condition:
+#  - active_loop: symptom_form
+
+
+#- rule: activate name form
+#  steps:
+#  - intent: tell_details
+#  - action: name_form
+#  - active_loop: name_form
+#
+#
+#- rule: submit name form
+#  condition:
+#  - active_loop: name_form
+#  steps:
+#  - action: name_form
+#  - active_loop: null
+#  - action: utter_complete

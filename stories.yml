@@ -1,0 +1,285 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: happy path second
+  steps:
+  - intent: smalltalk_greetings_goodmorning
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: happy path third
+  steps:
+  - intent: smalltalk_greetings_goodevening
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_mood_unhappy
+
+- story: lost someone
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_lostsomeone
+  - action: utter_empathy
+
+
+- story: who are you
+  steps:
+  - intent: ask_who_are_you
+  - action: utter_iamabot
+
+- story: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+
+- story: answer my question
+  steps:
+  - intent: smalltalk_agent_answer_my_question
+  - action: utter_affirm
+
+- story: what can you do
+  steps:
+  - intent: ask_whatcanyoudo
+  - action: utter_whatcanyoudo
+
+- story: who made you
+  steps:
+  - intent: ask_whomadeyou
+  - action: utter_whomadeyou
+
+- story: goodbye
+  steps:
+  - intent: ask_goodbye
+  - action: utter_goodbye
+
+- story: good night
+  steps:
+  - intent: smalltalk_greetings_goodnight
+  - action: utter_goodbye
+
+
+- story: handle insult
+  steps:
+  - intent: handleinsult
+  - action: utter_handleinsult
+
+- story: handle agent bad
+  steps:
+  - intent: smalltalk_agent_bad
+  - action: utter_handleinsult
+
+- story: handle appraisal bad
+  steps:
+  - intent: smalltalk_appraisal_bad
+  - action: utter_handleinsult
+
+- story: agent clever
+  steps:
+  - intent: smalltalk_agent_clever
+  - action: utter_clever
+
+- story: agent good
+  steps:
+  - intent: smalltalk_agent_good
+  - action: utter_clever
+
+- story: appraisal good
+  steps:
+  - intent: smalltalk_appraisal_good
+  - action: utter_clever
+
+- story: agent thank you
+  steps:
+  - intent: smalltalk_appraisal_thank_you
+  - action: utter_clever
+
+
+- story: agent well done
+  steps:
+  - intent: smalltalk_appraisal_well_done
+  - action: utter_clever
+
+
+- story: user therapy worthless
+  steps:
+  - intent: user_therapy_worthless
+  - action: utter_worthless_therapy
+
+
+- story: user change feeling worthless
+  steps:
+  - intent: user_change_feeling_worthless
+  - action: utter_how_to_change_feeling_worthless_therapy
+
+
+- story: user ask if depression or anxiety
+  steps:
+  - intent: user_ask_if_depression_or_anxiety
+  - action: utter_tell_user_depression_or_anxiety
+
+
+- story: user depression therapy
+  steps:
+  - intent: user_depression_therapy
+  - action: utter_depression_therapy
+
+
+- story: user anxiety therapy
+  steps:
+  - intent: user_anxiety_therapy
+  - action: utter_anxiety_therapy
+
+
+- story: user upset therapy
+  steps:
+  - intent: user_upset_therapy
+  - action: utter_upset_therapy
+
+- story: user seasonal therapy
+  steps:
+  - intent: user_seasonal_therapy
+  - action: utter_seasonal_anxiety_therapy
+
+- story: user loneliness therapy
+  steps:
+  - intent: user_loneliness_therapy
+  - action: utter_loneliness_therapy
+
+- story: user anger therapy
+  steps:
+  - intent: user_anger_therapy
+  - action: utter_anger_therapy
+
+
+- story: user suicidal therapy
+  steps:
+  - intent: user_suicidal_therapy
+  - action: utter_suicidal_therapy
+
+
+- story: user hopeless therapy
+  steps:
+  - intent: user_hopeless_therapy
+  - action: utter_hopeless_therapy
+
+
+- story: user emptiness therapy
+  steps:
+  - intent: user_emptiness_therapy
+  - action: utter_feeling_empty_therapy
+
+
+- story: user personality therapy
+  steps:
+  - intent: user_personality_therapy
+  - action: utter_personality_therapy
+
+- story: user tired therapy
+  steps:
+  - intent: user_tired_therapy
+  - action: utter_feeling_tired_therapy
+
+
+- story: user dementia therapy
+  steps:
+  - intent: user_dementia_therapy
+  - action: utter_dementia_therapy
+
+
+- story: user bipolar therapy
+  steps:
+  - intent: user_bipolar_disorder
+  - action: utter_bipolar_therapy
+
+
+- story: user ptsd therapy
+  steps:
+  - intent: user_ptsd_therapy
+  - action: utter_ptsd_therapy
+
+
+- story: user cried therapy
+  steps:
+  - intent: user_cried_therapy
+  - action: utter_cry_therapy
+
+
+- story: greet and symptom user agree or not
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: smalltalk_user_needs_advice
+  - action: utter_will_help
+  - intent: not_well
+  - action: utter_ask_question
+  - intent: user_say_no_or_yes
+  - action: utter_ask_insomnia
+  - intent: user_say_no_or_yes
+  - action: utter_ask_fatigue
+  - intent: user_say_no_or_yes
+  - action: utter_ask_anger
+  - intent: user_say_no_or_yes
+  - action: utter_ask_stomachissues
+  - intent: user_say_no_or_yes
+  - action: utter_ask_suicidalthoughts
+  - intent: user_say_no_or_yes
+  - action: utter_ask_lostofinterest
+  - intent: user_say_no_or_yes
+  - action: utter_ask_uneasiness
+  - intent: user_say_no_or_yes
+  - action: utter_ask_nausea
+  - intent: user_say_no_or_yes
+  - action: utter_ask_dizziness
+  - intent: user_say_no_or_yes
+  - action: utter_ask_increasedheartrate
+  - intent: user_say_no_or_yes
+  - action: utter_ask_muscleache
+  - intent: user_say_no_or_yes
+  - action: utter_ask_moodswings
+  - intent: user_say_no_or_yes
+  - action: utter_ask_paranoia
+  - intent: user_say_no_or_yes
+  - action: utter_ask_hygiene
+  - intent: user_say_no_or_yes
+  - action: utter_ask_erraticbehavior
+  - intent: user_say_no_or_yes
+  - action: utter_ask_relationshipproblems
+  - intent: user_say_no_or_yes
+  - action: utter_ask_flashbacks
+  - intent: user_say_no_or_yes
+  - action: utter_ask_nightmares
+  - intent: user_say_no_or_yes
+  - action: utter_ask_intrusivethoughts
+  - intent: user_say_no_or_yes
+  - action: utter_ask_avoidance
+  - intent: user_say_no_or_yes
+  - action: utter_ask_difficultyconcentrating
+  - intent: user_say_no_or_yes
+  - action: utter_ask_actingimpulsively
+  - intent: user_say_no_or_yes
+  - action: utter_ask_movementissues
+  - intent: user_say_no_or_yes
+  - action: utter_complete
+
+
+- story: stop asking questions
+  steps:
+    - intent: stop_asking_questions
+    - action: utter_stop

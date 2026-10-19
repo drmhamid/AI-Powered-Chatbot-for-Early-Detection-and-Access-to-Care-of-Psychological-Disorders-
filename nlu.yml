@@ -1,0 +1,941 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hello mate
+    - hello friend
+    - heya
+    - ssup
+    - sup
+    - whats up
+    - |Hi
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - see you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - till we meet again
+    - until nex time
+    - see ya
+    - talk to you later
+    - ttyl
+    - meet you again soon
+    - okay see you later
+    - hope to see you later
+    - bye for now
+    - till next time
+    - I must go
+    - see you
+    - see you soon
+    - bye-bye
+    - good bye
+    - bye bye see you
+    - bye bye see you soon
+    - bye bye take care
+    - I said bye
+    - never mind bye
+    - now bye
+    - that's all goodbye
+    - that's it goodbye
+    - leave me alone
+    - go to bed
+    - goodbye for now
+    - you can go now
+    - get lost
+    - goodbye see you later
+    - alright bye
+    - thanks bye bye
+    - okay bye
+    - okay thank you bye
+    - see you tomorrow
+    - ok bye
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - My day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - i am sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: not_well
+  examples: |
+    - I am not feeling well
+    - I don't feel good
+    - not good
+    - I feel sad
+    - I feel unwell
+    - I feel bad
+    - I don't feel okay
+    - I am not fine
+    - I feel anxious
+- intent: handleinsult
+  examples: |
+    - you're a loser lmao
+    - you are a stupid bot
+    - i hate you
+    - Stupid
+    - fuck you
+    - so dumb
+    - you are a moron
+    - you are an idiot
+    - so fucking dumb
+    - are you brain dead?
+    - how can you be such an idiot?
+    - a baby knows more than you
+    - i hate your dumb face
+    - you are fucking stupid
+    - bloody dunce
+    - You're an idiot.
+    - You are a fool.
+    - You're foolish.
+    - You are dumb.
+    - You have no sense.
+    - You are unintelligent.
+    - You're a dolt.
+    - You're a dunce.
+    - You have no brains.
+    - You have no intelligence.
+    - You are an idiot.
+    - You lack intelligence.
+    - You are unknowing.
+    - You are shortsighted.
+    - Your intelligence is laughable.
+    - You know nothing.
+    - You lack understanding.
+    - Your mindset is naive.
+    - You brain is dull.
+    - you are dumb
+    - you're an idiot
+    - God you're a moron
+    - you're so dumb
+    - you are idiotic
+    - you're the most moronic person I know
+    - I can't believe how dumb you are
+    - you are unintelligent
+    - you're not smart
+    - you are so ignorant
+    - you are stupid
+    - you're dumb
+    - asshole
+    - bitch
+    - fuck u
+    - idiot
+    - deal with my ass, you bitch
+    - you son of a bitch
+    - shut up asshole
+    - you asshole
+    - are u dump?
+    - fuck off
+    - fuck
+    - Fuck
+    - Fuck you
+    - fuck you machine learning bot
+    - Fuck u
+    - what fuck
+    - fucking stupid
+    - you are fucking stupid guy！
+    - go fuck yourself
+    - Fuck off
+    - fuck rasa
+    - fuck you!
+    - Fuck Off
+    - ok fuck you
+    - FUCK
+    - fucking work
+    - ok shut up
+- intent: ask_who_are_you
+  examples: |
+    - Who are you?
+    - What is your qualification?
+    - Okay who are you?
+    - Who are you
+    - Tell me who are you?
+    - Can you tell me who are you?
+    - Shall i know who are you?
+    - Tell me who are you.
+    - what's your identity?
+    - tell me what your identity is?
+    - can you tell me what are you?
+    - can you tell me what your identity is?
+    - who are you?
+- intent: ask_whatcanyoudo
+  examples: |
+    - What can you do?
+    - What are your abilities?
+    - What are you capable of?
+- intent: ask_whomadeyou
+  examples: |
+    - Who made you?
+    - Who created you?
+    - created you
+    - made
+- intent: smalltalk_agent_answer_my_question
+  examples: |
+    - I want you to answer me
+    - answer
+    - answer my question
+    - answer me
+    - give me an answer
+    - answer the question
+    - can you answer my question
+    - tell me the answer
+    - answer it
+    - give me the answer
+    - I have a question
+    - I want you to answer my question
+    - just answer the question
+    - can you answer me
+    - answers
+    - can you answer a question for me
+    - can you answer
+    - answering questions
+    - I want the answer now
+    - just answer my question
+- intent: smalltalk_agent_bad
+  examples: |
+    - you're not helping me
+    - you are bad
+    - you're very bad
+    - you're really bad
+    - you are useless
+    - you are horrible
+    - you are a waste of time
+    - you are disgusting
+    - you are lame
+    - you are no good
+    - you're bad
+    - you're awful
+    - you are not cool
+    - you are not good
+    - you are so bad
+    - you are so useless
+    - you are terrible
+    - you are totally useless
+    - you are very bad
+    - you are waste
+    - you're a bad
+    - you're not a good
+    - you're not very good
+    - you're terrible
+    - you're the worst
+    - you're the worst ever
+    - you're worthless
+- intent: smalltalk_agent_clever
+  examples: |
+    - you are so intelligent
+    - you are a genius
+    - smart
+    - brilliant
+    - clever
+    - you are clever
+    - you are so brainy
+    - you're really smart
+    - you're really brainy
+    - you know a lot
+    - you know a lot of things
+    - you have a lot of knowledge
+    - you know so much
+    - how smart you are
+    - how brainy you are
+    - how clever you are
+    - how brilliant you are
+    - you are intelligent
+    - you are qualified
+    - you are really smart
+    - you're very smart
+    - you are so smart
+    - you are too smart
+    - you are very clever
+    - you are very intelligent
+    - you are very smart
+    - you're intelligent
+    - you're a genius
+    - you're a smart cookie
+    - you're clever
+    - you're pretty smart
+    - you're qualified
+    - why are you so smart
+    - you are so clever
+- intent: smalltalk_agent_good
+  examples: |
+    - you are very helpful
+    - you are the best
+    - you're a true professional
+    - you are good
+    - you work well
+    - you are good at it
+    - you are very good at it
+    - you are a pro
+    - you are a professional
+    - you're awesome
+    - you work very well
+    - you're perfect
+    - you're great
+    - you're so kind
+    - you are amazing
+    - you are awesome
+    - you are cool
+    - you are really good
+    - you are really nice
+    - you are so amazing
+    - you're just super
+    - you are so awesome
+    - you are so cool
+    - you are so fine
+    - you are so good
+    - you are so helpful
+    - you are so lovely
+    - you are the best ever
+    - you are the best in the world
+    - you are the nicest person in the world
+    - you are too good
+    - you are very cool
+    - you are very kind
+    - you are very lovely
+    - you are very useful
+    - you are wonderful
+    - you made my day
+    - you make my day
+    - you rock
+    - you almost sound human
+    - I want to tell everyone how awesome you are
+    - I'd like to tell everyone that you are awesome
+    - I want to let everyone know that you are awesome
+    - let's tell everyone that you are awesome
+    - you are really amazing
+- intent: smalltalk_appraisal_bad
+  examples: |
+    - pretty bad
+    - not good enough
+    - that was lame
+    - that was terrible
+    - it is bad
+    - that's bad
+    - this is bad
+    - not good
+    - I'm afraid it's bad
+    - no it's bad
+    - that was awful
+    - bad
+    - so bad
+    - this is too bad
+    - terrible
+    - horrible
+    - horrific
+    - abysmal
+    - it's bad
+    - no good
+    - that was bad
+    - that was horrible
+    - that's lame
+    - that's not good
+    - that's terrible
+    - that's too bad
+    - this is not good
+    - too bad
+    - very bad
+    - bad girl
+    - it's not good
+    - not so good
+    - it's very bad
+    - it's too bad
+    - that's not good enough
+    - well too bad
+    - bad very bad
+    - it's so bad
+    - really bad
+    - it's really bad
+    - bad idea
+    - that is bad
+    - that was not good
+    - it's not so good
+    - not a good one
+    - oh that's not good
+    - not too good
+    - so lame
+    - that's really bad
+    - it is too bad
+    - bad really bad
+- intent: smalltalk_appraisal_good
+  examples: |
+    - so cool
+    - cool
+    - that is good
+    - glad to hear that
+    - that's very nice of you
+    - terrific
+    - it's amazing
+    - that's awesome
+    - perfect
+    - excellent
+    - that's great
+    - it's good
+    - it's great
+    - fine
+    - good
+    - nice
+    - that's fine
+    - very good
+    - amazing
+    - fantastic
+    - great
+    - good very good
+    - that's very good
+    - really good
+    - it is fine
+    - it is good
+    - it's perfect
+    - much better
+    - not bad
+    - not too bad
+    - it's very good
+    - marvelous
+    - that's nice
+    - pleasant
+    - pretty good
+    - really nice
+    - splendid
+    - straight
+    - super
+    - super fantastic
+    - sweet
+    - really well
+    - very well
+    - that is awesome
+    - that is nice
+    - that is wonderful
+    - that was amazing
+    - that was awesome
+    - that was cute
+    - that was pretty good
+    - that was very good
+    - that's a good idea
+    - that's a good thing
+    - that's amazing
+    - that's awesome thank you
+    - that's better
+    - that's cute
+    - that's fantastic
+    - that's much better
+    - that's nice of you
+    - that's not bad
+    - that's perfect
+    - that's pretty good
+    - that's really good
+    - that's really nice
+    - that's sweet of you
+    - that's very nice
+    - that's wonderful
+    - this is awesome
+    - this is good
+    - this is great
+    - very nice
+    - very then
+    - wonderful
+    - I'm glad to hear that
+    - ok good
+    - good for you
+    - good to know
+    - glad to hear it
+    - so good
+    - so sweet of you
+    - it was good
+    - oh well
+    - good thing
+    - that was good
+    - it's awesome
+    - okay good
+    - no it's okay
+- intent: smalltalk_appraisal_thank_you
+  examples: |
+    - you helped a lot thank you
+    - appreciate your help
+    - cheers
+    - thank you
+    - thanks
+    - thanks a lot
+    - terrific thank you
+    - great thank you
+    - thanks so much
+    - thank you so much
+    - thanks for your help
+    - thank you for your help
+    - nice thank you
+    - I appreciate it
+    - I thank you
+    - thank you that will be all
+    - thanks buddy
+    - thanks love
+    - thank you my friend
+    - well thanks
+    - very good thank you
+    - good thanks
+    - thanks again
+    - thank you again
+    - all thank you
+    - alright thank you
+    - alright thanks
+    - no thank you that's all
+    - perfect thank you
+    - so nice of you
+    - well thank you
+    - thnx
+    - thanx
+- intent: smalltalk_appraisal_well_done
+  examples: |
+    - good job
+    - great job
+    - way to go
+    - well done
+    - nice work
+    - great work
+    - amazing work
+    - bravo
+    - good work
+- intent: smalltalk_greetings_goodevening
+  examples: |
+    - good evening
+    - good evening to you
+    - hey good evening
+    - hello good evening
+    - evening
+    - good evening there
+- intent: smalltalk_greetings_goodmorning
+  examples: |
+    - good morning
+    - good morning to you
+    - hello good morning
+    - have a nice morning
+    - have a great morning
+    - morning
+    - good morning there
+    - top of the morning to you
+    - a good morning
+    - hi good morning
+    - and a good morning to you
+    - good morning too
+- intent: smalltalk_greetings_goodnight
+  examples: |
+    - sweet dreams
+    - good night
+    - have a good night
+    - good night to you
+    - thank you good night
+    - bye good night
+    - good night bye
+    - good good night
+    - good night for now
+    - goodnight
+    - night
+    - thanks goodnight
+    - good night see you tomorrow
+    - alright goodnight
+    - good tonight
+    - okay have a good night
+- intent: smalltalk_user_needs_advice
+  examples: |
+    - what should I do about it
+    - any suggestions
+    - i need help
+    - need help
+    - what do you recommend
+    - give me a wise advice
+    - I need advice
+    - any advice
+    - do you have any advice for me
+    - advise me
+    - what should I do
+    - can I ask for your advice
+    - can you advise me
+    - guide me
+    - can you give me advice
+    - can you offer any advice
+    - give me some advice about
+    - give me some good advice
+    - help me with advice
+    - I could use some advice
+    - I need an advice from you
+    - I seek your advice
+    - what can you recommend
+    - what do you suggest
+    - what is your advice
+- intent: user_symptom_lackofsleep
+  examples: |
+    - I can not sleep at night
+    - I have insomnia
+    - I sleep only a few hours
+    - I am unable to sleep
+    - I am sleepless at night
+    - It's very difficult to sleep at night
+    - I have difficulty sleeping
+    - I often wakeup at night easily
+    - I take sleeping pills
+    - I don't have a bed time routine
+- intent: user_symptom_fatigue
+  examples: |
+    - I am feeling weakness
+    - I feel tired all day
+    - I am unable to do my daily tasks
+    - I feel like I have no energy
+    - I have fatigue
+    - It's very difficult for me to do anything
+    - I feel drained
+    - I am exhausted all day
+- intent: user_symptom_anger
+  examples: |
+    - I am unable to control my anger
+    - I am angry all the time
+    - I am feeling very irritated
+    - I feel irritated on small things
+    - I am feeling annoyed
+    - People annoy me so much
+    - I am irritated by people
+    - I usually lashes out
+    - I become furious
+    - I am feeling furious
+- intent: user_symptom_stomachissues
+  examples: |
+    - I am feeling pain in my stomach
+    - My stomach hurts all the time
+    - I have stomach issues
+    - I am diagnosed with stomach problems
+    - I am unable to eat anything
+    - There is constant pain my belly
+    - I don't have an appetite
+    - I am hungry all the time
+- intent: user_symptom_suicidalthoughts
+  examples: |
+    - I want to end my life
+    - My mind is full of suicidal thoughts
+    - I hope my life ends
+    - My meaningless life should end
+    - Death is the only solution for me
+    - I want to kill myself
+    - Killing myself will end my problems
+- intent: user_symptom_lostofinterest
+  examples: |
+    - I have lost interest in everything
+    - I don't feel pleasure in doing anything
+    - I am exhausted by doing anything
+    - My life is bored
+    - I don't find anything interesting now
+    - I am dishearten by everything
+    - Noting makes me feel happy now
+- intent: user_symptom_uneasiness
+  examples: |
+    - I am feeling uncomfortable
+    - I am feeling tensed
+    - I am feeling pain
+    - I am unable to relax
+    - I am unable to rest
+    - I am dread from everything
+- intent: user_symptom_nausea
+  examples: |
+    - I am feeling sick all day
+    - I feel like vomiting
+    - My stomach is unable to digest anything
+    - I am unable to relax
+    - I am unable to rest
+    - I am dread from everything
+- intent: user_symptom_dizziness
+  examples: |
+    - I feel like I am going to faint
+    - I feel like I am going to blackout
+    - I feel like I am weak
+    - I am feeling unsteady
+    - i am feeling lightheaded all day
+- intent: user_symptom_increasedheartrate
+  examples: |
+    - My heart beats soo fast
+    - My heartbeat increases
+    - My heart is pounding very fast
+    - My heart rate is racing soo fast
+- intent: user_symptom_muscleache
+  examples: |
+    - I am feeling pain in my muscles
+    - My body hurts
+    - There is pain in my legs
+    - There is stiffness in my muscles
+- intent: user_symptom_moodswings
+  examples: |
+    - My mood changes very quickly
+    - I am unable to control my mood
+    - My emotions changes quickly
+    - I am having severe mood swings
+- intent: user_symptom_paranoia
+  examples: |
+    - I think I am paranoid
+    - I am feeling betrayed by everyone
+    - I don't trust other people actions
+    - I feel like other people don't like me
+- intent: user_symptom_hygiene
+  examples: |
+    - I don't take care of my personal hygiene
+    - My hygiene is very weak
+    - I don't take care of myself
+    - I don't want to look good
+- intent: user_symptom_erraticbehavior
+  examples: |
+    - My behavior changes a lot
+    - My behavior is not regular
+    - My mood changes very quickly
+    - Sometimes I feel like my behavior has changed
+- intent: user_symptom_relationshipproblems
+  examples: |
+    - I have issues in my personal life
+    - My wife is not happy with me
+    - My relationship is breaking down
+    - I am having issues with my wife
+    - I feel like i am not worthy of any relationship
+    - I cannot keep up with the people
+- intent: user_symptom_flashbacks
+  examples: |
+    - I am unable to forget my past
+    - I keep seeing memories from my past
+    - I keep thinking of the accident that happened years ago
+    - My mind is full of thoughts from my past
+- intent: user_symptom_nightmares
+  examples: |
+    - I keep having nightmares
+    - I keep having horror dreams
+    - My dreams haunt me
+    - My dreams are scary
+- intent: user_symptom_intrusivethoughts
+  examples: |
+    - My mind is full of thoughts all the time
+    - Random thoughts keep popping in my mind
+    - I can not control my thoughts
+    - My thoughts are very illogical
+- intent: user_symptom_avoidance
+  examples: |
+    - I keep avoiding all the things
+    - I don't want to do anything
+    - I try to avoid my daily tasks
+    - I am avoiding everything around me
+- intent: user_symptom_difficultyconcentrating
+  examples: |
+    - I cannot concentrate on anything
+    - I am unable to focus on anything
+    - I am being careless
+    - I am making little mistakes
+- intent: user_symptom_actingimpulsively
+  examples: |
+    - I have been acting impulsively
+    - I am doing things without thinking
+    - I am doing things carelessly
+    - I don't think before doing anything
+- intent: user_symptom_movementissues
+  examples: |
+    - Somtimes I am unable to move
+    - At times my body feels stuck
+    - I am having issues with moving some limbs
+    - Sometimes my arm doesn't move
+    - My legs get locked sometimes
+    - Recently my body movements are very slow
+
+- intent: user_therapy_worthless
+  examples: |
+    - Feel worthless
+    - I am worthless
+    - I should not be here
+    - I have issues
+    - how can i stop feeling worthless?
+- intent: user_change_feeling_worthless
+  examples: |
+    - How can I change feeling of being worthless?
+- intent: user_ask_if_depression_or_anxiety
+  examples: |
+    - How can I find cause of anxiety?
+    - Cause of anxiety
+    - Cause of depression
+    - Feeling more down and down
+- intent: user_depression_therapy
+  examples: |
+    - What causes depression
+    - What is depression
+- intent: user_anxiety_therapy
+  examples: |
+    - What is anxiety
+    - What causes anxiety
+- intent: user_upset_therapy
+  examples: |
+    - Feeling upset
+    - Why I am upset?
+    - Why do i feel upset?
+    - I feel upset without any reason
+    - What is making me feel upset?
+- intent: user_seasonal_anxiety
+  examples: |
+    - I am having winter blues
+    - I have seasonal anxiety
+    - How can I fight winter blues?
+    - I feel sad in winters
+    - I feel change of behavior as season changes
+    - What is seasonal anxiety?
+    - I feel sad in summer/autumn
+- intent: user_loneliness_therapy
+  examples: |
+    - I feel alone
+    - I feel lonely
+    - Why do i feel so lonely?
+    - How can i cope up with my loneliness?
+- intent: user_anger_therapy
+  examples: |
+    - I feel angry
+    - I am angry for no reason
+    - I have this rage inside of me
+    - I get frustrated at little things
+    - I get angry easily
+    - I feel mad
+    - How can i stop being angry?
+- intent: user_suicidal_therapy
+  examples: |
+    - I want to end my life
+    - I can't live anymore
+    - I don't want to live anymore
+    - I want to kill myself
+    - I'm having suicidal thoughts
+- intent: user_hopeless_therapy
+  examples: |
+    - I feel hopeless
+    - I feel as if i have no hope
+    - I have no hope whatsoever
+- intent: user_personality_therapy
+  examples: |
+    - I think i suffer from personality disorder
+    - I think i have different personalities
+    - Sometimes, I am not myself
+    - Sometimes, it's as if someone else has taken over my body
+- intent: user_dementia_therapy
+  examples: |
+    - I have dementia
+    - I forget things easily
+    - Someone in my family has dementia
+    - What is dementia?
+- intent: user_bipolar_disorder
+  examples: |
+    - I am suffering from bipolar disorder
+    - I have bipolar disorder
+    - I have sudden mood swings
+    - I have sudden changes of behavior
+    - I change my behavior quickly
+- intent: user_emptiness_therapy
+  examples: |
+    - Feeling empty
+    - Feeling of emptiness
+    - Why do i feel so empty?
+    - I feel as i have nothing to do
+    - i feel empty
+- intent: user_tired_therapy
+  examples: |
+    - Feeling tired
+    - Feeling of tiredness
+    - I am tired most of the time
+    - I feel tired
+- intent: user_ptsd_therapy
+  examples: |
+    - Post traumatic stress disorder
+    - Ptsd
+    - Suffering from ptsd
+    - I have ptsd
+    - I suffer from a past trauma
+- intent: user_cried_therapy
+  examples: |
+    - I cried
+    - I often cry
+    - I cry easily
+    - Why do i cry so much?
+    - I cry alot
+    - I cry at little things
+- intent: ask_lostsomeone
+  examples: |
+    - I lost my brother
+    - I lost someone
+    - I lost a friend
+    - My brother died
+    - My sister died
+    - someone died
+    - My mother died
+    - My father died
+    - died
+- intent: ask_feeling_anxious
+  examples: |
+    - I am feeling anxious
+    - feeling anxious
+    - I am having anxiety attacks
+    - I have anxiety
+    - i think i have anxiety
+- intent: tell_details
+  examples: |
+    - I want to tell details
+    - tell details
+
+
+
+- intent: user_say_no_or_yes
+  examples: |
+    - no
+    - never
+    - nope
+    - yes
+    - ofcourse
+    - yeah
+    - yea
+    - obviously
+    - sure
+    - kind of
+
+- intent: stop_asking_questions
+  examples: |
+    - stop asking questions
+    - I do not want to answer anymore
